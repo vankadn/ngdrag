@@ -1,0 +1,26 @@
+<mat-card>
+
+    <div cdkDropList cdkDropListOrientation="horizontal" class="example-list" (cdkDropListDropped)="drop($event)">
+        <!-- <div class="example-box" *ngFor="let timePeriod of timePeriods" cdkDrag>{{timePeriod.periord}}</div> -->
+        <mat-card [ngClass]="['example-box']" [style.backgroundColor]="'yellow'" *ngFor="let timePeriod of timePeriods"
+            cdkDrag>
+            <mat-card-content>
+                <div fxLayout="column" fxLayoutAlign="space-around center">
+                    <div class="head">
+                        <h3><b> {{timePeriod.periord}} - {{timePeriod.year}}</b></h3>
+                    </div>
+                    <div>{{timePeriod.ruler}}</div>
+                    <div>{{timePeriod.dynasty}}</div>
+                    <div>{{timePeriod.pack}}</div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+
+</mat-card>
+
+
+
+<!-- Copyright 2019 Google Inc. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
