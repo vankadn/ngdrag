@@ -20,7 +20,11 @@
 } */
 
 .ncwghbutt{
-  background: red;
+  background: skyblue;
+}
+
+.editableInput{
+  width: 50px;
 }
 
 .example-box {

@@ -2,15 +2,19 @@
 
     <div cdkDropList cdkDropListOrientation="horizontal" class="example-list" (cdkDropListDropped)="drop($event)">
         <!-- <div class="example-box" *ngFor="let timePeriod of timePeriods" cdkDrag>{{timePeriod.periord}}</div> -->
-        <mat-card [ngClass]="['example-box']" [style.backgroundColor]="'yellow'" *ngFor="let timePeriod of timePeriods"
-            cdkDrag>
+        <mat-card [ngClass]="['example-box']"
+            [ngStyle]="{'background-color':timePeriod.ruler === 'NCWGHBUTT' ? 'skyblue' : 'white' }"
+            *ngFor="let timePeriod of timePeriods" cdkDrag>
             <mat-card-content>
                 <div fxLayout="column" fxLayoutAlign="space-around center">
                     <div class="head">
-                        <h3><b> {{timePeriod.periord}} - {{timePeriod.year}}</b></h3>
+                        <h3><b> {{timePeriod.periord}} - <input *ngIf="timePeriod.ruler === 'NCWGHBUTT'"
+                                    class="editableInput" type="text" name="LastName"
+                                    value={{timePeriod.year}}>{{timePeriod.year}}</b></h3>
                     </div>
                     <div>{{timePeriod.ruler}}</div>
                     <div>{{timePeriod.dynasty}}</div>
+                    <div>Core Type: {{timePeriod.coreType}}</div>
                     <div>{{timePeriod.pack}}</div>
                 </div>
             </mat-card-content>

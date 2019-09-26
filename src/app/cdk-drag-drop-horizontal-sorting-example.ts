@@ -11,13 +11,13 @@ import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 })
 export class CdkDragDropHorizontalSortingExample {
   timePeriods = [
-    { periord: 'A', year: '1100', ruler: '1000000240-10', dynasty: 'P&G Final Cust', pack: 'Pack A' },
-    { periord: 'A', year: '1100', ruler: '1000000240-10', dynasty: 'P&G Final Cust', pack: 'Pack A' },
-    { periord: 'A', year: '1100', ruler: '1000000240-10', dynasty: 'P&G Final Cust', pack: 'Pack A' },
-    { periord: 'A', year: '1100', ruler: '1000000240-10', dynasty: 'P&G Final Cust', pack: 'Pack A' },
-    { periord: 'A', year: '1100', ruler: '1000000240-10', dynasty: 'P&G Final Cust', pack: 'Pack A' },
-    { periord: 'A', year: '1100', ruler: '1000000240-10', dynasty: 'P&G Final Cust', pack: 'Pack A' },
-    { periord: 'Z', year: '1100', ruler: 'NCWGHBUTT', dynasty: 'NC Order', pack: '   ' },
+    { periord: 'A', year: '1100', ruler: '1000000240-10', dynasty: 'P&G Final Cust', pack: 'Pack A', coreType:'NR' },
+    { periord: 'A', year: '1100', ruler: '1000000240-10', dynasty: 'P&G Final Cust', pack: 'Pack A', coreType:'NR' },
+    { periord: 'A', year: '1100', ruler: '1000000240-10', dynasty: 'P&G Final Cust', pack: 'Pack A', coreType:'NR' },
+    { periord: 'A', year: '1100', ruler: '1000000240-10', dynasty: 'P&G Final Cust', pack: 'Pack A', coreType:'NR' },
+    { periord: 'A', year: '1100', ruler: '1000000240-10', dynasty: 'P&G Final Cust', pack: 'Pack A', coreType:'NR' },
+    { periord: 'A', year: '1100', ruler: '1000000240-10', dynasty: 'P&G Final Cust', pack: 'Pack A', coreType:'NR' },
+      { periord: 'Z', year: '1100', ruler: 'NCWGHBUTT', dynasty: 'NC Order', pack: '   ', coreType: 'NR'},
 
   ];
 
